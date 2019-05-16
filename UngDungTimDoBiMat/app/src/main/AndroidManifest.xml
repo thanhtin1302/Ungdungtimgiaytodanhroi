@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.thanhtin.ungdungtimdobimat">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconapp"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/iconapp"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Signin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".fragments.Map" />
+        <activity android:name=".InfoUser" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_API_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".fragments.PostNew"
+            android:label="@string/title_activity_post_new"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".fragments.PostNewInfo" />
+        <activity android:name=".fragments.MapPost" />
+        <activity android:name=".adapter.ViewManagerNews" />
+        <activity android:name=".fragments.ManagerEditNews" />
+        <activity android:name=".fragments.UpdateNewsActivity"></activity>
+    </application>
+
+</manifest>

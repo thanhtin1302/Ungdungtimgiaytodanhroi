@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00c2b0</color>
+    <color name="colorPrimaryDark">#009688</color>
+    <color name="colorAccent">#f58db6</color>
+    <color name="colorOrange">#f9ce72</color>
+    <color name="check">#00c2b0</color>
+    <color name="brtoolbar">#dfe4e4e4</color>
+    <color name="texttoolbar">#a706a1ef</color>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".adapter.ViewManagerNews">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#fff"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:background="#fff">
+
+            <ImageView
+                android:id="@+id/mnupdate_seller_btn_back_manager"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:paddingVertical="10dp"
+                android:paddingRight="16dp"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:id="@+id/update_seller_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thông tin người dùng"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcv_manager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

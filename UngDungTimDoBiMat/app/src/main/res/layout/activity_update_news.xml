@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#dfdfdf">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#fff"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:background="#fff">
+
+            <ImageView
+                android:id="@+id/uupdate_seller_btn_back_map"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:paddingVertical="10dp"
+                android:paddingRight="16dp"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:id="@+id/update_seller_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/advent_pro"
+                android:text="Quản lý bài viết"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorPrimary"/>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_margin="12dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#fff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                >
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:text="Loại tin"
+                    android:textSize="16sp"
+                    tools:fontFamily="@font/advent_pro"
+                    tools:includeFontPadding="false"
+
+                    />
+                <Spinner
+                    android:id="@+id/uspiner_loaitin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textSize="16dp"
+                    android:padding="2dp"
+                    android:background="#58c2c2c2"
+                    />
+            </LinearLayout>
+            <View
+                android:background="#a3a3a3"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:text="Tỉnh thành"
+                    android:textSize="16dp"
+                    tools:fontFamily="@font/advent_pro"
+                    tools:includeFontPadding="false" />
+
+                <Spinner
+                    android:id="@+id/uspiner_TinhThanh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textSize="18sp"
+                    android:padding="2dp"
+                    android:background="#58c2c2c2"
+                    />
+            </LinearLayout>
+
+            <View
+                android:background="#a3a3a3"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="#fff"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:text="Đường - Quận/Huyện"
+                    android:textSize="16dp"
+                    tools:fontFamily="@font/advent_pro"
+                    tools:includeFontPadding="false" />
+
+                <EditText
+                    android:id="@+id/uedQuanHuyen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:layout_margin="5dp"
+                    android:padding="2dp"/>
+
+            </LinearLayout>
+            <View
+                android:background="#a3a3a3"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:text="Ngày Nhặt/Rơi "
+                    android:textSize="16dp"
+                    tools:fontFamily="@font/advent_pro"
+                    tools:includeFontPadding="false" />
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:padding="2dp"
+                    android:id="@+id/utvdatetime"
+                    style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="dd/mm/yyyy">
+
+                </TextView>
+
+
+            </LinearLayout>
+            <View
+                android:background="#a3a3a3"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#fff"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:text="Tiêu Đề"
+                    android:textSize="16dp"
+                    tools:fontFamily="@font/advent_pro"
+                    tools:includeFontPadding="false" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/uedtieude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#fff"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:text="Nội Dung"
+                    android:textSize="16dp"
+                    tools:fontFamily="@font/advent_pro"
+                    tools:includeFontPadding="false"  />
+
+                <EditText
+                    android:id="@+id/uednoidung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_margin="5dp"
+                    android:padding="2dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="#fff">
+                    <EditText
+                        android:id="@+id/uedvitri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_margin="5dp"
+                        android:padding="2dp"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:id="@+id/ubtnvitri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+
+                        android:background="@drawable/border_radius"
+                        android:fontFamily="@font/aladin"
+                        android:padding="2dp"
+                        android:text="vị trí"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
+                        android:textAllCaps="false"/>
+
+
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/uimgnews"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginHorizontal="4dp"
+                    android:background="#000"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#fff">
+
+                <Button
+                    android:id="@+id/ubtnthemanh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_radius"
+                    android:fontFamily="@font/alegreya_sc_bold"
+                    android:padding="2dp"
+                    android:text="Thêm Ảnh"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/ubtndang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_radius2"
+                    android:fontFamily="@font/aladin"
+                    android:padding="2dp"
+                    android:text="Cập Nhật"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <ProgressBar
+                    android:id="@+id/uprogressBar"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</LinearLayout>

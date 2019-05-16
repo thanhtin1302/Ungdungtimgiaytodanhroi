@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:id="@+id/layoutPostItem"
+    >
+
+
+        <LinearLayout
+            android:id="@+id/llayoutpost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+           >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="#ffff">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:padding="5dp"
+
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="1dp" />
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/txtname"
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:text="Thanh Tin"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/txtdatetime"
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:text="12/07/2019 12:00"
+                        android:layout_marginLeft="6dp"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#efefef">
+
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/txttitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tiêu đề"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:paddingVertical="6dp"
+                    android:paddingHorizontal="8dp"
+                    android:background="#fff"
+                    />
+                <TextView
+                    android:id="@+id/txtnoidung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="8dp"
+                    android:paddingBottom="6dp"
+                    android:text="..."
+                    android:textSize="16sp"
+                    android:background="#fff"/>
+                <TextView
+                    android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                    android:id="@+id/txtdiachi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dia chi..."
+                    android:textSize="14sp"
+                    android:paddingHorizontal="8dp"
+                    android:background="#fff"
+                    android:paddingBottom="6dp"/>
+
+                <ImageView
+
+                    android:id="@+id/imagepost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:src="@drawable/backgroud"
+                    android:background="#000" />
+            </LinearLayout>
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#dedede">
+
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                >
+
+                <Button
+                    android:paddingLeft="12dp"
+                    android:drawableLeft="@drawable/ic_gps_fixed_black_24dp"
+                    android:id="@+id/btnvitri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Truy cập vị trí" />
+
+                <View
+                    android:layout_width="1px"
+                    android:background="#dedede"
+                    android:layout_height="20dp"/>
+
+                <Button
+                    android:paddingLeft="12dp"
+                    android:drawableLeft="@drawable/ic_call_black_24dp"
+                    android:textAllCaps="false"
+                    android:id="@+id/btnlienhe"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFF"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Liên hệ" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

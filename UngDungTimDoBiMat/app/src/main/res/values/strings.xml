@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Quest App</string>
+    <string name="google_map_API_key">AIzaSyDuc93xxGlpVrSGd3otGzJ3hpvb_r609jo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_post_new">PostNew</string>
+
+</resources>

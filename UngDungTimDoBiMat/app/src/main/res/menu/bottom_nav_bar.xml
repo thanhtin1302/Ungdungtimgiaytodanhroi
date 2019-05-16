@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Trang Chủ"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:id="@+id/home"/>
+    <!--<item android:title="Thông Báo"-->
+        <!--android:icon="@drawable/ic_notifications_black_24dp"-->
+        <!--android:id="@+id/notif"/>-->
+    <item android:title="Người Dùng"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:id="@+id/person"/>
+</menu>

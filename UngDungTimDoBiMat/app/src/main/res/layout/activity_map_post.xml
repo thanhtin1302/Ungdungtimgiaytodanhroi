@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/postupdate_seller_btn_back_map1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:paddingVertical="10dp"
+                android:paddingRight="16dp"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:id="@+id/update_seller_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bảng tin"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorPrimary"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map_seller1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </com.google.android.gms.maps.MapView>
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
